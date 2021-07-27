@@ -1,0 +1,53 @@
+.header {
+    a,
+    span {
+        color: #8D8D8D;
+    }
+    span {
+        position: relative;
+        top: 3px;
+    }
+    a:hover {
+        color: lighten(#8D8D8D, 10%);
+        span {
+            color: lighten(#8D8D8D, 10%);
+        }
+    }
+}
+
+.text-hide {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bg-logo {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d’Perfume.png);
+    width: 128px;
+    height: 38px;
+}
+
+.footer-logo {
+    background-image: url(../images/d’Perfumewhite.png);
+    width: 128px;
+    height: 38px;
+}
+
+.d-block {
+    display: block;
+}
+
+.footer {
+    background-color: #916000;
+    a {
+        transition: .3s;
+        &:hover {
+            transition: .3s;
+            color: lighten(#916000, 50%);
+        }
+    }
+}
+
+.white {
+    color: white;
+}
