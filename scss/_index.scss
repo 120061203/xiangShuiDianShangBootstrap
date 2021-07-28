@@ -142,6 +142,10 @@
 }
 
 .product {
+    @include pad {
+        margin-top: 32px;
+        padding: 0 15px;
+    }
     @include mobile {
         margin-top: 32px;
         padding: 0 15px;
@@ -159,12 +163,13 @@
 
 .text-delete {
     text-decoration: line-through;
+    color: #8D8D8D;
 }
 
 .productList {
     background-color: #E0E0E0;
     .price {
-        @include mobile {
+        @include pad {
             margin-bottom: 32px;
         }
     }
@@ -199,22 +204,24 @@ a.soldOut::before {
         color: #8D8D8D;
     }
     .container {
-        @include mobile {
+        @include pad {
             padding: 0 15px !important;
         }
     }
     form {
         display: flex;
+        // background-color: red;
         @include mobile {
-            width: 100%;
+            max-width: 100%;
+            justify-content: center;
         }
     }
     input {
         box-sizing: border-box;
-        max-width: 220px;
+        max-width: 200px;
         // max-width: 50%;
         // height: 60px;
-        padding: 20px 10px;
+        // padding: 20px 10px;
         display: inline-block;
         border-radius: 5px 0 0 5px;
         border: 2px solid #916000;

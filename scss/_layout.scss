@@ -102,7 +102,8 @@
 
 .copyright {
     p {
-        @include mobile {
+        padding: 10px 0;
+        @include pad {
             font-size: 14px;
             vertical-align: center;
         }
