@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+    // outline: 1px solid red;
 }
 
 .fz-2 {
@@ -51,6 +51,21 @@
 
 .pt-312 {
     padding-top: 312px;
+}
+
+.material-icons {
+    &.md-18 {
+        font-size: 18px;
+    }
+    &.md-36 {
+        font-size: 36px;
+    }
+    &.md-40 {
+        font-size: 40px;
+    }
+    &.md-48 {
+        font-size: 48px;
+    }
 }
 
 .banner {
