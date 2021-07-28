@@ -351,6 +351,10 @@ a {
   padding-top: 312px;
 }
 
+.material-icons {
+  cursor: pointer;
+}
+
 .material-icons.md-18 {
   font-size: 18px;
 }
@@ -598,5 +602,81 @@ a.soldOut::before {
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+.brandNav {
+  background-color: #916000;
+}
+
+.brandNav a {
+  margin-right: 28px;
+  color: white;
+}
+
+.brandNav a:hover {
+  color: #f7a400;
+}
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.productWall {
+  padding-top: 80px;
+  background-color: white;
+}
+
+@media (max-width: 376px) {
+  .productWall {
+    padding: 40px 0;
+  }
+}
+
+.productWall li {
+  margin-bottom: 58px;
+}
+
+@media (max-width: 376px) {
+  .productWall li {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 376px) {
+  .productWall .title h4 {
+    font-size: 20px;
+  }
+}
+
+.operation span {
+  color: #916019;
+}
+
+.operation span:hover {
+  color: #dc9734;
+}
+
+.pageLink {
+  margin-bottom: 60px;
+}
+
+.pageLink a {
+  color: black;
+}
+
+.pageLink a:hover {
+  color: #c0a265;
+}
+
+@media (max-width: 376px) {
+  .pageLink {
+    margin-bottom: 40px;
+  }
+}
+
+a.pageLink-active {
+  text-decoration: underline;
+  color: #AC8A46;
 }
 /*# sourceMappingURL=main.css.map */
