@@ -30,32 +30,37 @@
                 <a href="#">Contact</a>
                 <a href="#">log in</a>
             </li>
-            <li class="p-2 ">
+            <li class="p-2 d-none d-md-block d-lg-block">
                 <a class="p-1 d-none d-md-block d-lg-block" href="#">
                     <span class="material-icons ">store</span>Product
                 </a>
 
             </li>
-            <li class="p-2 ">
+            <li class="p-2 d-none d-md-block d-lg-block">
                 <a class="p-1 d-none d-md-block d-lg-block" href="#">
                     <span class="material-icons">person</span>log in
                 </a>
             </li>
-            <li class="p-2">
+            <li class="p-2 d-none d-md-block d-lg-block">
                 <a class="p-1 d-none d-md-block d-lg-block" href="#">
                     <span class="material-icons">favorite</span>Wishlist
                 </a>
             </li>
-            <li class="p-2">
+            <li class="p-2 ">
                 <a class="p-1 d-none d-md-block d-lg-block" href="#">
                     <span class="material-icons">shopping_cart</span>Cart(3)
                 </a>
-                <button type="button" class="burgerBtn btn d-md-none d-lg-none d-xl-none">
-                    <span class="material-icons md-40">
-                        menu
-                    </span>
-                </button>
+                <a class="d-md-none d-lg-none d-xl-none " href="#">
+                    <span class="material-icons md-40 align-middle">shopping_cart</span>
+                    <span class="cartNumber">3</span>
+                </a>
+
             </li>
+            <button type="button" class="burgerBtn btn d-md-none d-lg-none d-xl-none">
+                <span class="material-icons md-40">
+                    menu
+                </span>
+            </button>
         </ul>
     </div>
     <!--header end-->
@@ -70,7 +75,7 @@
         </div>
     </div>
     <!--banner end-->
-    <div class="product container p-0 row mx-auto g-0">
+    <div class="product container  row mx-auto g-0 flex-column-reverse flex-md-row">
         <div class="product__content col-md-6 col-lg-6 d-flex flex-md-column align-items-center justify-content-center">
             <div class="product__inner col-md-8">
                 <h3 class="title fz-4 fw-bold">Gabrielle CHANEL</h3>
@@ -81,7 +86,7 @@
         <div class="product__img col-md-6 col-lg-6 p-0"><img src="images/index2-resize.jpg" alt=""></div>
     </div>
 
-    <div class="product container p-0 row mx-auto g-0 flex-md-row-reverse">
+    <div class="product container  row mx-auto g-0 flex-md-row-reverse flex-column-reverse">
 
         <div class="product__content col-md-6 col-lg-6 d-flex flex-md-column align-items-center justify-content-center">
             <div class="product__inner col-md-8">
@@ -93,7 +98,7 @@
         <div class="product__img col-md-6 col-lg-6 p-0"><img src="images/index3-resize.jpg" alt=""></div>
     </div>
 
-    <div class="product container p-0 row mx-auto g-0">
+    <div class="product container  row mx-auto g-0 flex-column-reverse flex-md-row">
         <div class="product__content col-md-6 col-lg-6 d-flex flex-md-column align-items-center justify-content-center">
             <div class="product__inner col-md-8">
                 <h3 class="title fz-4 fw-bold">CHANEL N°5</h3>
@@ -105,11 +110,11 @@
     </div>
     <!--product end-->
     <!--long procuct start-->
-    <div class="product container p-0 row mx-auto g-0 flex-md-row-reverse mb-60">
+    <div class="product container  row mx-auto g-0 flex-md-row-reverse mb-60 flex-column-reverse">
 
         <div class="product__content col-md-6 col-lg-6 d-flex flex-md-column align-items-center justify-content-center">
             <div class="product__inner col-md-8">
-                <h3 class="title fz-3 fw-bold">1. <br>Levels of Preventive Maintenance Compliance</h3>
+                <h3 class="title fz-3 fw-bold mt-1">1. <br>Levels of Preventive Maintenance Compliance</h3>
                 <p class="introduce fz-2 fw-light mb-52">The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.</p>
                 <h3 class="title fz-3 fw-bold">2. <br>Percentage of Planned Maintenance</h3>
                 <p class="introduce fz-2 fw-light mb-52">The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.</p>
@@ -124,10 +129,11 @@
     <!--long procuct end-->
     <div class="productList py-40 ">
         <ul class="container  mx-auto row ">
-            <li class="col-md-4 col-lg-4">
+            <li class=" col-md-4 col-lg-4">
                 <div class="productList__img">
                     <a href="#">
-                        <img src="images/index6-resize.jpg" alt="">
+                        <img class="d-none d-md-block" src="images/index6-resize2.jpg" alt="">
+                        <img class="d-md-none" src="images/index6-mobile.jpg" alt="">
                     </a>
                 </div>
                 <div class="title fw-bold">
@@ -143,7 +149,8 @@
             <li class="col-md-4 col-lg-4">
                 <div class="productList__img">
                     <a href="#">
-                        <img src="images/index7-resize.jpg" alt="">
+                        <img class="d-none d-md-block" src="images/index7-resize2.jpg" alt="">
+                        <img class="d-md-none" src="images/index7-mobile.jpg" alt="">
                     </a>
                 </div>
                 <div class="title fw-bold">
@@ -159,7 +166,8 @@
             <li class="col-md-4 col-lg-4">
                 <div class="productList__img">
                     <a class="soldOut" href="#">
-                        <img src="images/index8-resize.jpg" alt="">
+                        <img class="d-none d-md-block" src="images/index8-resize2.jpg" alt="">
+                        <img class="d-md-none " src="images/index8-mobile.jpg" alt="">
                     </a>
                 </div>
                 <div class="title fw-bold">
@@ -175,21 +183,24 @@
         </ul>
     </div>
     <!--productList end-->
-    <div class="product container  row mx-auto  py-60 flex-md-row-reverse">
+    <div class="product container  row mx-auto  py-60 flex-md-row-reverse flex-column-reverse">
         <div class="product__content col-md-4 col-lg-4 d-flex flex-md-column align-items-center justify-content-center">
-            <div class="product__inner col-md-12">
-                <h3 class="title fz-4 fw-bold">Bottle-Recycling</h3>
+            <div class="product__inner col-md-12 mb-5">
+                <h3 class="title fz-4 fw-bold mt-1">Bottle-Recycling</h3>
                 <p class="introduce fz-20 fw-light mb-2">Recycle your used empty bottles and be rewarded!</p>
                 <p class="introduce fz-2 fw-light mb-2">For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty
                     Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.</p>
-                <a href="#" class="seeMore fz-2">查看更多</a>
+                <a href="#" class="seeMore fz-2 ">查看更多</a>
             </div>
         </div>
-        <div class="product__img col-md-8 col-lg-8 p-0"><img src="images/index9.jpg" alt=""></div>
+        <div class="product__img col-md-8 col-lg-8 p-0">
+            <img class="d-none d-md-block" src="images/index9.jpg" alt="">
+            <img class="d-md-none " src="images/index9-mobile.jpg" alt="">
+        </div>
     </div>
     <!--product end-->
     <div class="subscribe">
-        <div class="container row mx-auto ">
+        <div class="container row mx-auto p-0 g-0">
             <div class="subscribe__content col-md-4 col-lg-4">
                 <div class="subscribe__inner">
                     <h2 class="fz-4 fw-bold mb-20 pt-312">記得<br>訂閱以獲得更多資訊！</h2>
@@ -213,7 +224,7 @@
                 </h1>
                 <p class="ms-2 white">© 2020. All Rights Reserved.</p>
             </div>
-            <ul class="d-flex ">
+            <ul class="d-none d-md-flex d-lg-flex">
                 <li class="p-2">
                     <a class="white p-2" href="#">Product</a>
                 </li>

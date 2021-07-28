@@ -13,6 +13,20 @@
             color: lighten(#8D8D8D, 10%);
         }
     }
+    .cartNumber {
+        background-color: red;
+        color: white;
+        display: inline-block;
+        position: relative;
+        left: -15px;
+        top: -10px;
+        width: 14px;
+        height: 14px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        border-radius: 7px;
+    }
 }
 
 .text-hide {
@@ -46,6 +60,11 @@
             color: lighten(#916000, 50%);
         }
     }
+    .footer__menu {
+        @include pad {
+            display: none;
+        }
+    }
 }
 
 .white {
@@ -60,7 +79,7 @@
         background-color: #707070;
         z-index: 2;
         position: absolute;
-        top: 92px;
+        top: 72px;
         left: 0;
         text-align: center;
         // max-height: 500px;
@@ -79,4 +98,13 @@
 
 .mobile-show {
     display: none;
+}
+
+.copyright {
+    p {
+        @include mobile {
+            font-size: 14px;
+            vertical-align: center;
+        }
+    }
 }

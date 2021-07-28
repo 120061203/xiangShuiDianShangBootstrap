@@ -1,5 +1,5 @@
 * {
-    // outline: 1px solid red;
+    outline: 1px solid red;
 }
 
 .fz-2 {
@@ -20,6 +20,10 @@
 
 .fz-20 {
     font-size: 20px;
+}
+
+.mb-5 {
+    margin-bottom: 40px;
 }
 
 .mb-52 {
@@ -75,14 +79,23 @@
     background-position: center;
     background-attachment: fixed;
     color: white;
+    @include mobile {
+        height: 480px;
+    }
     .container {
         height: 870px;
+        @include mobile {
+            height: 480px;
+        }
     }
 }
 
 .shop-btn {
     width: 80%;
     border-radius: 30px;
+    @include pad {
+        width: 100%;
+    }
     a {
         text-align: center;
         display: block;
@@ -127,6 +140,13 @@
     }
 }
 
+.product {
+    @include mobile {
+        margin-top: 32px;
+        padding: 0 15px;
+    }
+}
+
 .product__img {
     max-height: 555px;
     overflow: hidden;
@@ -142,6 +162,11 @@
 
 .productList {
     background-color: #E0E0E0;
+    .price {
+        @include mobile {
+            margin-bottom: 32px;
+        }
+    }
 }
 
 .productList {
@@ -172,17 +197,29 @@ a.soldOut::before {
     h2 {
         color: #8D8D8D;
     }
+    .container {
+        @include mobile {
+            padding: 0 15px !important;
+        }
+    }
     form {
         display: flex;
+        @include mobile {
+            width: 100%;
+        }
     }
     input {
         box-sizing: border-box;
-        width: 220px;
+        max-width: 220px;
+        // max-width: 50%;
         // height: 60px;
         padding: 20px 10px;
         display: inline-block;
         border-radius: 5px 0 0 5px;
         border: 2px solid #916000;
+        &::placeholder {
+            font-size: 16px;
+        }
         &:focus {
             outline: none;
             &::placeholder {
@@ -192,11 +229,12 @@ a.soldOut::before {
     }
     input[type="submit"] {
         // height: 60px;
-        width: 130px;
+        max-width: 130px;
         border-radius: 0 5px 5px 0;
         color: white;
         background-color: #916000;
         transition: .3s;
+        font-size: 16px;
         &:hover {
             background-color: darken(#916000, 5%);
             cursor: pointer;
