@@ -251,6 +251,10 @@ a {
 }
 
 .menu-show .mobile-show {
+  opacity: 1;
+}
+
+.mobile-show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,11 +269,12 @@ a {
   top: 72px;
   left: 0;
   text-align: center;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  opacity: 0;
 }
 
-.menu-show .mobile-show a {
+.mobile-show a {
   -webkit-transition: .3s;
   transition: .3s;
   color: white;
@@ -277,12 +282,8 @@ a {
   border-bottom: 1px solid white;
 }
 
-.menu-show .mobile-show a:hover {
+.mobile-show a:hover {
   background-color: #3d3d3d;
-}
-
-.mobile-show {
-  display: none;
 }
 
 .copyright p {
