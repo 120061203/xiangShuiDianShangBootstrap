@@ -28,7 +28,7 @@
     }
     .title {
         h4 {
-            @include mobile {
+            @include pad {
                 font-size: 20px;
             }
         }
@@ -38,6 +38,10 @@
 .operation {
     span {
         color: #916019;
+        @include pad {
+            position: relative;
+            top: -30px;
+        }
         &:hover {
             color: lighten(#916019, 20%);
         }
